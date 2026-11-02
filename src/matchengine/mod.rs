@@ -3,7 +3,9 @@
 
 mod order;
 mod limit;
+mod orderbook;
 
 
 pub use order::{Order, Side};
-pub use limit::{Limit};
+pub use limit::{Limit, Price};
+pub use orderbook::{OrderBook};
