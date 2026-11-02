@@ -34,4 +34,8 @@ impl Limit {
         self.totalvolume += order.size;
         self.orders.push(order);
     }
+
+    pub fn price(&self) -> &Price {
+        &self.price
+    }
 }
